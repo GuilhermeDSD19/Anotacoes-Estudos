@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="shortcut icon" href="../ex008/favicon.ico" type="image/x-icon">
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td{
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de cedulas</h1>
+    <table> <!-- rowspan = linha /// colspan coluna -->
+        <tr>
+            <td colspan="2">A</td>
+            <td rowspan="3">C</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td rowspan="2">F</td>
+   
+        </tr>
+        <tr>
+            <td>H</td>
+        </tr>
+    </table>
+</body>
+</html>

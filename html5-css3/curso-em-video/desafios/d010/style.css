@@ -1,0 +1,196 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'fonte-android';
+    src: url(fontes/idroid.otf);
+}
+@font-face {
+    font-family: 'bebas';
+    src: url(fontes/bebas-neue-book.otf);
+}
+
+header{
+    text-align: center;
+    background-image: linear-gradient(to top, #05371B, #2EA664);
+    width: auto;
+    padding: 1px 6px 9px 6px;
+    margin: 0px 0px -8px 0px;
+    box-shadow: 0px 20px 40px -30px;
+}
+
+#titulo{
+    font-family: 'bebas';
+    font-weight: bold;
+    color: white;
+    font-size: 48px;
+    box-shadow: 0px 20px 40px -30px;
+}
+
+#subtitulo {
+    font-family: Arial;
+    font-size: 19px;
+    font-weight: normal;
+    color: white;
+}
+
+nav{
+    text-align: left;
+    font-size: 16px;
+    margin-top: 84px;
+}
+
+nav > a{
+    color: #87E2B0;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+nav > a:hover{
+    color: #05371B;
+    background-color: #69ad88;
+    text-decoration: none;
+    padding: 9px;
+    border-radius: 6px;
+    transition-duration: .5s;
+}
+
+body{
+    font-family: Arial;
+    background-color: #EBE5C5;
+    margin: 0px auto;
+}
+
+body > main > p{
+    text-indent: 2em;
+    line-height: 2em;
+}
+
+body > main > aside > p{
+    text-indent: 2em;
+    line-height: 2em;
+}
+
+h1{
+    font-family: 'fonte-android';
+    font-size: 28px;
+    color: #05371B;
+    font-weight: 100;
+}
+
+main{
+    text-align: justify; 
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    border-radius: 0px 0px 12px 12px;
+    padding: 1px 20px 20px 20px;
+    margin: 8px auto 0px auto;
+    box-shadow: 0px 0px 20px -8px;
+}
+
+main > p > a{
+    background-color: #83E1AD;
+    color: #05371B;
+}
+
+main > p > strong{
+    color: #1A5C37;
+}
+
+img{
+    display: block;
+    margin: 0px auto;
+}
+
+main > h2{
+    font-family: 'fonte-android';
+    font-size: 20px;
+    color: #1A5C37 ;
+    background-image: linear-gradient(to right, #83E0AD, white);
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+div{
+    background-color: #05371B;
+    margin: 0px -20px 0px -20px;
+    padding: 23px 0px 0px 40px;
+}
+   
+aside{
+    background-color: #83E1AD;
+    border-radius: 10px;
+    padding-bottom: 9px;
+    box-shadow: 0px 20px 40px -30px;
+}
+
+ul{
+    list-style-image: url("imagens/check-mark-16.png");
+}
+
+aside > h1{
+    padding-left: 10px;
+    background-color: #1A5C37;
+    padding: 9px 0px;
+    box-shadow: -3px 12px 20px -20px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#asside-titulo{
+    padding-left: 10px;
+    font-family: Arial;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#mais{
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: 18px;
+    background-color: #1A5C37;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+}
+aside > p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+aside > p > a {
+    color: #05371B;
+}
+
+aside > ul{
+    columns: 2;
+    margin: 18px 0px;
+    list-style-position: outside;
+}
+
+
+footer{
+    background-color: #063D1E;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    margin: 25px auto -15px auto;
+    padding: 5px 0px 5px 0px;
+}
