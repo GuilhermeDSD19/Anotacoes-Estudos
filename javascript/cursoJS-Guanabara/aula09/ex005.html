@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passo com DOM</title>
+    <style>
+        body{
+            background-color: rgb(103, 165, 216);
+            color: white;
+            font: normal 18px arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Apreendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg" class="msg" name="msg">Clique em mim </div> <br>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName("p")[1]
+        
+        /*p1.style.color="blue"
+        corpo.style.backgroundColor="black"
+        window.document.write("Está escrito assim: " + p1.innerText)
+        window.document.write("Está escrito assim: " + p1.innerHTML) 
+
+        var d = window.document.getElementById('msg')
+        d.style.background="purple"
+        d.innerText="Teste de qualiade"
+        
+        window.document.getElementById('msg').innerText = "PROF. GUANABARA É MUITO BOM!" */
+        
+        /*var d = document.getElementsByName('msg')[0]
+        d.innerText="olá, teste" */
+
+       /* var d1 = document.getElementsByClassName('msg')[0]
+        d1.innerText="tese" */
+
+        var d = document.querySelector('div#msg').innerHTML="teste"
+       
+    </script>
+</body>
+</html>
