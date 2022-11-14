@@ -1,0 +1,56 @@
+<!-- var pais = 'EUA'
+console.log(`Você nasceu no ${pais}.`)
+if (pais == 'Brasil'){
+    console.log('Então, Você é Brasileiro!')
+} else {
+    console.log('Então, você é Estrangeiro!')
+}-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    
+</head>
+<body>
+    <h1>Você é brasileiro?</h1>
+    Em que pais você nasceu? 
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="Enviar" onclick="confirmar()">
+    <div id="res"></div>
+
+    <script>
+        function confirmar(){
+            var pais = document.querySelector('input#pais')
+            var res = document.querySelector('div#res')
+            var nac = pais.value
+            res.innerHTML += `<p>Seus pais de origem é <strong>${nac}</strong></p>`
+            if (nac == "Brasil" || nac == "brasil") {
+                res.innerHTML += `<p>Você é Brasileiro`;
+            } else {
+                res.innerHTML += `<p>Você é Estrangeiro`;
+            }
+           
+        }
+
+      /* 
+    <script>
+        var txtn = document.querySelector("input#txtnac");
+        var res = document.querySelector("div#res");
+        var nac = txtn.value;
+        res.innerHTML = `<p>Seu país de origem é <strong>${nac}</strong></p>`;
+        if (nac == "Brasil" || nac == "brasil") {
+          res.innerHTML += `<p>Você é Brasileiro`;
+        } else {
+          res.innerHTML += `<p>Você é Estrangeiro`;
+        }
+      }
+      */ 
+    </script>
+  </body>
+</html>
+    </script>
+</body>
+</html>
