@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="imagens/logo.png" alt="Logo SpaceX.png"> </a> 
+            | <a href="the-spaceships.html">The Spaceships</a> | <a href="hire-us.html">Hire Us</a>
+            <hr>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Hire Us Now</h1>
+            <p>Leave a message to request one of our services and we will get back to you as soon as possible.</p>
+        </section> <br> 
+        <section>
+            <form action="spacex.php" method="post" autocomplete="on">
+                
+                <div> <!-- Nome e E-mail -->
+                    <label for="nome">Name: </label>
+                    <input type="text" name="nome" id="nome" autocomplete="name">
+                    <label for="email"> - E-mail: </label>
+                    <input type="email" name="email" id="email" autocomplete="email">
+                </div> <br>
+
+                <div> <!-- Nave e Tipo de Serviço -->
+                    <label for="naves">Spaceships: </label>
+                    <select id="naves" name="naves">
+                        <option value="falcon 9">Falcon 9</option>
+                        <option value="Falcon heavy">Falcon Heavy</option>
+                    </select> 
+                    <label for="services"> | Type of Service: </label>
+                    <input type="search" name="services" id="services" list="service">
+                    <datalist id="service">
+                        <option>Nam quis nulla. Integer malesuada</option>
+                        <option>Nam quis nulla. Integer malesuada</option>
+                        <option>Nam quis nulla. Integer malesuada</option>
+                        <option>Nam quis nulla. Integer malesuada</option>
+                    </datalist>
+                </div> <br>
+
+                <div> <!-- Enviar -->
+                    <input type="submit" value="Send Message">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
