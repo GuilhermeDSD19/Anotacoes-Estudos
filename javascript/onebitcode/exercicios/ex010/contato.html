@@ -4,9 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
     <title>Contato</title>
 </head>
 <body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu is-active">
+      <div class="navbar-start">
+        <a class="navbar-item" href="index.html">
+          Início
+        </a>
+        <a class="navbar-item" href="contato.html">
+          Contato
+        </a>
+      </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+
+<!-- Content #1 (Card Perfil) -->
+            <div class="card-content">
+                    <div class="media">
+                      <div class="media-content">
+                          <p class="title is-4" style="font-weight: bold;">Guilherme Duarte</p>
+                          <span class="tag is-dark is-medium">JavaScript Full Stack Developer</span>
+                      </div>
+                    </div>
+                    <div class="content">
+                        <p>(11) 98603-7111</p>
+                        <p>guilhermesilva19860@gmail.com</p> 
+                    </div>
+                </div>
+              </div>
+            </div>
+                  
+<!-- Content #2 (Formulario) -->
+        <div class="column is-9">
+            <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">
+                    Contato
+                  </p>
+                  <button class="card-header-icon" aria-label="more options">
+                    <span class="icon">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </header>
+
+                <section class="section">
+                  <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control has-icons-left has-icons-right">
+                      <input class="input" type="email" placeholder="Email input" value="">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                      <span class="icon is-small is-right">
+                        <i class="fas fa-exclamation-triangle"></i>
+                      </span>
+                    </div>
+
+                  </div>
+                  
+                  <div class="field">
+                    <label class="label">Message</label>
+                    <div class="control">
+                      <textarea class="textarea" placeholder="Textarea"></textarea>
+                    </div>
+                  </div>
     
+                  <div class="field is-grouped">
+                    <div class="control">
+                      <button class="button is-primary">Submit</button>
+                    </div>
+                  </div>
+                </section>
+        </div>
+    </div>
+</section>
+
 </body>
 </html>
