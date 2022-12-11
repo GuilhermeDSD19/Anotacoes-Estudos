@@ -2,7 +2,7 @@ let nome;
 let idade;
 let confirmacao;
 
-alert("Bem-vindo! A seguir pediremos que informe alguns dados.")
+window.alert("Bem-vindo! A seguir pediremos que informe alguns dados.")
 
 nome = window.prompt("Qual é o seu nome?")
 idade = window.prompt("Qual é a sua idade?")
