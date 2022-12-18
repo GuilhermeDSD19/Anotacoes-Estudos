@@ -1,4 +1,4 @@
-let testeArray = ["Milan","Liverpool","Palmeiras", "Brasil"]
+/* let testeArray = ["Milan","Liverpool","Palmeiras", "Brasil"]
 
 console.log(testeArray)
 
@@ -26,4 +26,12 @@ indiceMilan = testeArray.indexOf("Palmeiras")
 
 console.log(testeArray, indiceMilan)
 
+*/
 
+let arrayBidimensinal = [ ["Elemental", 7], ["Helmet", 13], ["Golias", 9], ["Supernova", 9] ]
+
+console.log(arrayBidimensinal[3][0])
+
+let arrayBidimensinal2 = [ ["Elemental", 7], ["Helmet", 13], ["Golias", 9], ["Supernova", "9", [true, false]] ]
+
+console.log(arrayBidimensinal2[3][2][1])
