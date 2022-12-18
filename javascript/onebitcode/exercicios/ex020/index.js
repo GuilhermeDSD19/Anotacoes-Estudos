@@ -1,8 +1,29 @@
-let testeArray = [, , ]
+let testeArray = ["Milan","Liverpool","Palmeiras", "Brasil"]
 
-console.log(testeArray[])
+console.log(testeArray)
 
-let testeNewArray = new Array (8)
+testeArray.push("Vasco")
 
-console.log(testeNewArray)
+console.log(testeArray)
+
+testeArray.pop()
+
+console.log(testeArray)
+
+testeArray.shift()
+
+console.log(testeArray)
+
+testeArray.unshift("Real Madrid")
+
+console.log(testeArray)
+
+totalPosicoes = testeArray.length
+
+console.log(testeArray, totalPosicoes)
+
+indiceMilan = testeArray.indexOf("Palmeiras")
+
+console.log(testeArray, indiceMilan)
+
 
