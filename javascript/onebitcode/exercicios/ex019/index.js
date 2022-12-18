@@ -18,11 +18,11 @@ let alertaVelocidade = speed => alert(`A nave esta a ${speed} Km/s`)
 
 let naveParada = function (speed) {
     if (speed <= 0) {
-        alert(`A nave esta parada e as comportas já podem ser abertas`)
+        alert(`A nave chegou a ${speed} Km/s\nAs comportas já podem ser abertas`)
     }
 }
 
-function desaceleracaoDaNave(speed, desaceleracaoEm20Km, alertaVelocidade, naveParada) {
+/* HOF */ function desaceleracaoDaNave(speed, desaceleracaoEm20Km, alertaVelocidade, naveParada) {
     do {
         alertaVelocidade(speed)
         speed = desaceleracaoEm20Km(speed)
