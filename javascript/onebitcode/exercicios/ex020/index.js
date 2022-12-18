@@ -42,7 +42,6 @@ let removedSpaceships = spaceshipNames.splice(1, 2 , "teste")
 
 console.log(spaceshipNames + '\n' + removedSpaceships)
 
-*/
 
 let spaceshipNames = ["Elemental", "Darwin", "Artemis", "Supernova"]
 
@@ -51,3 +50,30 @@ console.log(spaceshipNames)
 let extractedNames = spaceshipNames.slice(1,3)
 
 console.log(spaceshipNames + "\n" + extractedNames)
+
+let hitchedSpaceships = ["Deméter", "Darwin", "Supernova", "Fenix", "Puller"]
+
+hitchedSpaceships.forEach(function(currentSpaceship, index) {
+    console.log("Nave: " + currentSpaceship + "\nÍndice: " + index)
+})
+
+let hitchedSpaceships = ["Deméter", "Darwin", "Supernova", "Fenix", "Puller"]
+
+let upcasedSpaceships = hitchedSpaceships.map(function(currentSpaceship) {
+    let upcased = currentSpaceship.toUpperCase()
+    return upcased
+})
+
+console.log(upcasedSpaceships)
+
+let hitchedSpaceships = ["Deméter", "Darwin", "Supernova", "Fenix", "Puller"]
+
+let with7Chars = hitchedSpaceships.filter(element => {return element.length >= 7})
+
+console.log(with7Chars)
+
+let hitchedSpaceships = ["Deméter", "Darwin", "Supernova", "Fenix", "Puller"]
+
+let with7Chars = hitchedSpaceships.find(element => {return element.length >= 7})
+
+console.log(with7Chars) */
