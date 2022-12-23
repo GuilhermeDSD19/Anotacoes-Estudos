@@ -54,7 +54,7 @@ function listaDeNaves(naves) {
 var navesEngatadas = []
 showMenu()
 
-Versão do Professor */ 
+Versão do Professor */
 
 class Spaceship {
 	constructor(name, crewQuantity) {
@@ -64,7 +64,7 @@ class Spaceship {
 		this.entraceDoorsOpen = false
 	}
 
-	hitch(){
+	hitch() {
 		this.isHitched = true
 		this.entraceDoorsOpen = true
 	}
@@ -79,17 +79,17 @@ function showMenu() {
 	return chosenOption
 }
 
-function createSpaceship(){
+function createSpaceship() {
 	let spaceshipName = prompt("Informe o nome da nave")
 	let crewQuantity = prompt("Informe a quantidade de tripulantes")
 	let spaceship = new Spaceship(spaceshipName, crewQuantity)
 	return spaceship
 }
 
-function printSpaceshipList(spaceships){
+function printSpaceshipList(spaceships) {
 	let spaceshipsList = ""
 	spaceships.forEach((spaceship, index) => {
-		spaceshipsList += (index+1) + "- " + spaceship.name + " (" + spaceship.crewQuantity + " tripulantes)\n"
+		spaceshipsList += (index + 1) + "- " + spaceship.name + " (" + spaceship.crewQuantity + " tripulantes)\n"
 	});
 	alert(spaceshipsList)
 }
@@ -97,9 +97,9 @@ function printSpaceshipList(spaceships){
 let hitchedSpaceships = []
 let chosenOption
 
-while(chosenOption != "3"){
+while (chosenOption != "3") {
 	chosenOption = showMenu()
-	switch(chosenOption) {
+	switch (chosenOption) {
 		case "1":
 			let spaceshipToAdd = createSpaceship()
 			spaceshipToAdd.hitch()
