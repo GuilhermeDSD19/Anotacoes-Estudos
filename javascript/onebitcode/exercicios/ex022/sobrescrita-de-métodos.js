@@ -1,27 +1,34 @@
 class Spaceship {
-    constructor(name, maxCrew, maxRecommendadedVelocity) {
+    constructor(name, maxCrew, maxRecommendadedValue) {
         this.name = name
         this.maxCrew = maxCrew
-        this.maxRecommendadedVelocity = maxRecommendadedVelocity
+        this.maxRecommendadedVelocity = maxRecommendadedValue
         this.currentVelocity = 0
     }
 
     speedUp(acceleration) {
         this.currentVelocity += acceleration
-        if (this.currentVelocity > this.maxRecommendadedVelocity) {
+        if (this.currentVelocity > this.maxRecommendadedValue) {
             alert("VELOCIDADE MAXIMA ULTRAPASSADA!!\nDiminua ou poderá provocar danos a nave")
         }
     }
 }
 
 class TransportSpaceship extends Spaceship {
-    speedUp() {
-        alert("Naves de transporte só aumentam a velocidade em 1Km/s")
-        this.currentVelocity += 1
+    constructor(name, maxCrew, maxRecommendadedValue, maxLoadWeight) {
+        super(name, maxCrew, maxRecommendadedValue)
+        this.maxLoadWeight = maxLoadWeight
+    }
+
+    speedUp(acceleration) {
+        acceleration /= 2
+        alert("Incrementado velocidade em " + acceleration + "km/s")
+        super.speedUp(acceleration)
     }
 }
 
-let transportSpaceship = new TransportSpaceship("Transportadora", 4, 100)
-transportSpaceship.speedUp(130)
+let transportSpaceship = new TransportSpaceship("Transportadora", 4, 100, 400)
 
 console.log(transportSpaceship)
+
+transportSpaceship.speedUp(210)
