@@ -14,26 +14,14 @@ class Spaceship {
     }
 }
 
-class BattleSpaceship extends Spaceship {
-    stop() {
-        this.currentVelocity = 0
-        alert("Recolhendo armas e parando a nave de batalha")
+class TransportSpaceship extends Spaceship {
+    speedUp() {
+        alert("Naves de transporte só aumentam a velocidade em 1Km/s")
+        this.currentVelocity += 1
     }
 }
 
-class DiscoverySpaceship extends Spaceship {
-    stop() {
-        this.currentVelocity = 0
-        alert("Recolhendo equipamento de amostras e parando a nave de descoberta")
-    }
-}
+let transportSpaceship = new TransportSpaceship("Transportadora", 4, 100)
+transportSpaceship.speedUp(130)
 
-let darwin = new DiscoverySpaceship("Darwin", 10, 200)
-let fenix = new BattleSpaceship("Fenix", 8, 240)
-
-
-darwin.speedUp(210)
-fenix.speedUp(230)
-
-darwin.stop()
-fenix.stop()
+console.log(transportSpaceship)

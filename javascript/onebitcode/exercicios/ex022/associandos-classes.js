@@ -1,13 +1,13 @@
 class TimeDeFutebol {
-    constructor(name, playersQuantity, coachName, coachAge, CoachAmountOfTitles){
+    constructor(name, playersQuantity, coachName, coachAge, CoachAmountOfTitles) {
         this.name = name
         this.playersQuantity = playersQuantity
         this.coach = new Coach(coachName, coachAge, CoachAmountOfTitles)
-    } 
+    }
 }
 
 class Coach {
-    constructor(name, age, amountOfTitles){
+    constructor(name, age, amountOfTitles) {
         this.name = name
         this.age = age
         this.amountOfTitles = amountOfTitles
