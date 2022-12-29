@@ -5,11 +5,11 @@ export class Naves {
         this.type = type
         this.velocidade = 0
     }
-    assentoOuArmas(quantidade) {
+    assentoOuArmas(qtyArmas, qtyAssentos) {
         if (this.type == "Batalha") {
-            this.qtyArmas = quantidade
+            this.qtyArmas = qtyArmas
         } else { // Assentos
-            this.qtyAssentos = quantidade
+            this.qtyAssentos = qtyAssentos
         }
     }
 }
