@@ -9,4 +9,4 @@ function compras(trabalho1, trabalho2) {
     return { comprarSorverte, comprarTv50, comprarTv32, manterSaudavel, }
 }
 
-console.log(compras())
+console.log(compras()) 
