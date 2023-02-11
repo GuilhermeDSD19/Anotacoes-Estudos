@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide de Imagens</title>
+    <style>
+        #slideshow-container {
+            width: 500px;
+            height: 500px;
+            position: abso
+            ;
+            margin: auto;
+        }
+
+        #slideshow-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 100px;
+        }
+
+        .slideshow-hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="slideshow-container">
+
+
+
+        <img class="slideshow-hidden" src="http://files.cod3r.com.br/curso-web/imagem2.gif" height="350px" width="600px" alt="Intro Cod3r">
+
+        <img class="slideshow-hidden" src="http://files.cod3r.com.br/curso-web/imagem3.png" height="350px" width="600px" alt="Rio de Janeiro">
+
+        <img class="slideshow-hidden" src="http://files.cod3r.com.br/curso-web/avatar.jpg" height="350px" width="600px" alt="Avatar" height="56" align="left">
+
+        <img class="slideshow-hidden" src="http://files.cod3r.com.br/curso-web/imagem4.jpg" height="350px" width="600px">
+
+        <img class="slideshow-hidden" src="http://files.cod3r.com.br/curso-web/logo-larga.png" height="350px" width="600px" alt="Logo">
+
+    </div>
+</body>
+
+<script>
+    let images = document.querySelectorAll(".slideshow-hidden");
+    let i = 0;
+
+    setInterval(function () {
+        images[i].style.display = "none";
+        i = (i + 1) % images.length;
+        images[i].style.display = "block";
+    }, 2000);
+</script>
+
+</html>
