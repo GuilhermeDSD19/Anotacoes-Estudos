@@ -19,7 +19,14 @@ section {
 
 div{
     text-align: center;
-    padding: 10px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+#mes {
+    font-size: 80px;
+    font-weight: bolder;
+    text-decoration: underline;
 }
 
 footer{
