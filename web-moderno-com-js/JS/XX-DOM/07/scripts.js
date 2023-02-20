@@ -11,7 +11,7 @@ function carregar() {
             break
         case 1:
             mesAtual = 'Fevereiro'
-            document.body.style.background = "url(https://conteudo.imguol.com.br/c/entretenimento/4f/2021/02/01/agostinho-carrara-1612204229068_v2_1170x540.jpg)"
+            document.body.style.background = "#169670"
             break
         case 2:
             mesAtual = 'Março'
@@ -55,5 +55,5 @@ function carregar() {
             break
     }
     texto.innerHTML = `O mes atual é:`
-    nomeDoMes.innerHTML = `${mesAtual}`
+    nomeDoMes.innerHTML = `${mesAtual} <img width="450px" src="https://scontent.fgru19-1.fna.fbcdn.net/v/t1.6435-9/79442250_445824382773741_7311169871310487552_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=0debeb&_nc_ohc=wIJucER2HsUAX8Z3VOf&_nc_ht=scontent.fgru19-1.fna&oh=00_AfD45_JbcCa5bsTihrWk-B9pVYNOinJIFuSNzMdYopmLnw&oe=641A036D">`
 }
