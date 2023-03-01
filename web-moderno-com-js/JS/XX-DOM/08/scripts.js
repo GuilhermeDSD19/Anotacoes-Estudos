@@ -1,41 +1,27 @@
+/*
+Pegar a data Atual
+	Pegar somente o ano atual.
+
+Criar a variavel com o ano do formulario
+
+Criar a variavel da div de retorno
+
+Criar uma estutura condicional 
+	if para verificar se o valor é maior que 0 E menor que o ano atual
+	else variavel com o sexo do formulario. Calculo da idade do usuario. Variavel do sexo vazia
+		if com sexo[0] = Homem
+		Else sexo[1] = Mulher
+
+Adicionar as imagens atraves do createElement e setAtributte
+	Criar a estrutura condicional para filtrar as imagens pela idade.
+	Dica: Aproveitar o if do sexo para fazer a estrutura condicional
+	Exibir as imagens com o .appenChild()
+	>0, <10 = Criança
+	<21 = Jovem
+	<50 = Adulto
+	else = Idoso
+*/
+
 function verificar() {
-    var data = new Date()
-    var ano = data.getFullYear()
-    var fano = document.getElementById('txtano')
-    var res = document.querySelector('div#res')
-    if (fano.value.length == 0 || Number(fano.value) > ano) {
-        window.alert('[ERRO] Verifique os dados e tente novamente!')
-    } else {
-        var fsex = document.getElementsByName('radsex')
-        var idade = ano - Number(fano.value)
-        var genêro = ''
-        var img = document.createElement('img')
-        img.setAttribute('id', 'foto')
-        if (fsex[0].checked) {
-            genêro = 'Homem'
-            if (idade >= 0 && idade < 10) {
-                img.setAttribute('src', 'imagens/bebe-m.png')
-            } else if (idade < 21) {
-                img.setAttribute('src', 'imagens/adolescente-m.png ')
-            } else if (idade < 50) {
-                img.setAttribute('src', 'imagens/adulto-m.png')
-            } else {
-                img.setAttribute('src', 'imagens/idoso-m.png')
-            }
-        } else if (fsex[1].checked) {
-            genêro = 'Mulher'
-            if (idade >= 0 && idade < 10) {
-                img.setAttribute('src', 'imagens/bebe-f.png')
-            } else if (idade < 21) {
-                img.setAttribute('src', 'imagens/adolescente-f.png')
-            } else if (idade < 50) {
-                img.setAttribute('src', 'imagens/adulto-f.png')
-            } else {
-                img.setAttribute('src', 'imagens/idoso-f.png')
-            }
-        }
-        res.style.textAlign = 'center'
-        res.innerHTML = `Detectamos ${genêro} com ${idade} anos.`
-        res.appendChild(img)
-    }
-}  
+	window.alert("TESTE")
+}
