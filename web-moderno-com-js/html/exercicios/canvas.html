@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes da Canvas</title>
+</head>
+
+<body>
+    <h1>Canvas</h1>
+    <canvas id="idCanvas" width="400" height="400" style="border:1px solid #c3c3c3;">
+        Se seu navegador não possuir suporte para canvas, você verâ esta imagem
+    </canvas>
+
+    <script>
+        var c = document.getElementById("idCanvas");
+        var ctx = c.getContext("2d");
+        ctx.arc(200, 200, 180, 0, Math.PI * 2);
+        ctx.arc(150, 200, 80, 0, Math.PI * 2);    
+        ctx.stroke();
+        </script>
+</body>
+
+</html>
