@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    max-width: 375px;
+    margin: auto;
+}
+
+.resultado {
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 25px 40px;
+    border-radius: 0px 0px 30px 30px;
+    text-align: center;
+    color: white;
+    align-self: center;
+    align-items: center;
+
+}
+
+.title {
+    color: rgba(255, 255, 255, 0.66);
+    font-weight: 500;
+}
+
+.great {
+    font-size: 24px;
+    font-weight: 500px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.69);
+}
+
+.resutado-of-100 {
+    display: flex;
+    width: 125px;
+    height: 125px;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+.res {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.of-100 {
+    color: rgba(255, 255, 255, 0.33);
+    font-weight: 500;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 30px;
+    text-align: left;
+    background-color: white;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin: 15px 0px;
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.089);
+    color: hsl(0, 100%, 67%);
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, 0.09);
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 0.092);
+    color: hsl(166, 100%, 37%);
+}
+
+.visual {
+    background-color: hsla(234, 85%, 45%, 0.092);
+    color: hsl(234, 85%, 45%);
+}
+
+.tema {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    margin: 0px;
+}
+
+.tema img {
+    margin: 0px 12px 0px 0px;
+}
+
+.nota {
+    color: gray;
+}
+
+.nota strong {
+    color: black;
+}
+
+.buttom {
+    font-weight: 700;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        min-width: 800px;
+        display: flex;
+        height: 100vh;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .resultado{
+        height: 360px;
+        width: 325px;
+        border-radius: 30px;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+    }
+
+    .summary{
+        padding: 50px;
+        box-shadow: 1px 1px 1px hsl(241, 100%, 89%);
+        width: 250px;
+    }
+
+    
+}
