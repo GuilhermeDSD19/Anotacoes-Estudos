@@ -22,7 +22,7 @@ body {
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   }
   .right {
-    width: 50%;
+    width: 60%;
     padding: 20px;
   }
   .left h4 {
@@ -45,8 +45,7 @@ body {
     font-weight: bold;
     font-size: 60px;
   }
-  .left h3 {
-  }
+
   .score-con {
     display: flex;
   }
