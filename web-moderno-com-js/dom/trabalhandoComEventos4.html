@@ -10,7 +10,7 @@
             display: flex;
             flex-direction: column;
         }
-        
+
         form input,
         form select,
         form button {
@@ -25,12 +25,26 @@
     <form name="pesquisa" action="http://www.google.com.br/search">
         <input type="text" name="q" placeholder="Digite o termo...">
         <select name="hl">
-                <option value="pt-br">Português (Brasil)</option>
-                <option value="en-us">Inglês (Americano)</option>
-            </select>
+            <option value="pt-br">Português (Brasil)</option>
+            <option value="en-us">Inglês (Americano)</option>
+        </select>
         <button wm-submit>Pesquisar</button>
     </form>
     <script>
-        // ...
+        window.prompt('TESTE')
+        const submit = document.querySelector('[wm-submit]')
+        submit.onclick = function (e) {
+            e.preventDefault()
+
+            const form = e.target.parentNode
+            const formData = new FormData(form)
+            formData.append('ajax', true)
+            console.log(formData.get('q'))
+            console.log(formData.has('hl'))
+
+            for (let dado of formData) {
+                console.log(dado)
+            }
+        }
     </script>
 </body>
