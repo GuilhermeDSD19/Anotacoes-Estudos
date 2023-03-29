@@ -1,25 +1,69 @@
+</html>
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset='UTF-8'>
-    <title>Trabalhando com Eventos #02</title>
-    <link rel='stylesheet' href='css/estilo.css'>
+    <title>Trabalhando com Eventos #03</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+        }
+        
+        .esquerda {
+            height: 100vh;
+            width: 50%;
+            background-color: coral;
+        }
+        
+        .direita {
+            height: 100vh;
+            width: 50%;
+            background-color: cornflowerblue;
+        }
+        
+        .item {
+            border: solid 5px black;
+            background-color: darkgrey;
+            color: white;
+            height: 100px;
+            font-size: 40px;
+            margin: 10px;
+            vertical-align: middle;
+            text-align: center;
+        }
+    </style>
 </head>
 
-<body class="conteudo exercicio">
-    <div>Elemento</div>
+<body>
+    <div class="esquerda" wm-dropzone>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    <div class="direita" wm-dropzone></div>
     <script>
-        const item = document.querySelector('div')
-        item.style.position = 'absolute'
+        const items = document.querySelectorAll('[wm-dropzone] .item')
+        items.forEach((item, index) => {
+            item.draggable = true
+            item.id = item.id || `draggable-item-${index}`
+            item.ondragstart = e =>
+                e.dataTransfer.setData('item-id', e.target.id)
+        })
 
-        item.onmousemove = e => {
-            const item = e.target
-            item.style.cursor = 'move'
-            if (e.buttons) {
-                item.style.top = `${e.clientY - (item.clientHeight / 2)}px`
-                item.style.left = `${e.clientX - (item.clientWidth / 2)}px`
+        const dropzones = document.querySelectorAll('[wm-dropzone]')
+        dropzones.forEach(dropzone => {
+            dropzone.ondragover = e => e.preventDefault()
+            dropzone.ondrop = function(e) {
+                const id = e.dataTransfer.getData('item-id')
+                const item = document.getElementById(id)
+                // e.target.appendChild(item)
+                dropzone.appendChild(item)
             }
-        }
+        })
     </script>
 </body>
+
+</html>
