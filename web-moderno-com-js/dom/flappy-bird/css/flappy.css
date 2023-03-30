@@ -1,10 +1,10 @@
-*{
+* {
     box-sizing: border-box;
 }
 
 @font-face {
     font-family: 'Pixel';
-    src: url(font/Pixel.ttf);
+    src: url(fonts/Pixel.ttf);
 }
 
 [wm-flappy] {
