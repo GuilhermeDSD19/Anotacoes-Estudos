@@ -140,7 +140,6 @@ function colidiu(passaro, barreiras) {
     return colidiu
 }
 
-
 function FlappyBird() {
     let pontos = 0
 
