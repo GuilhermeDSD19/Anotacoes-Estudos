@@ -1,2 +1,37 @@
 @charset "UTF-8";
 
+body{
+    max-width: 1440px;
+}
+
+.cabecalho{
+    padding: 30px 15px;
+    position: relative;
+}
+
+.cabecalho .logo h1{
+    background: url(../images/logo.jpg) center center no-repeat;
+    width: 85px;
+    height: 85px;
+    display: inline-block;
+}
+
+.cabecalho .logo h1 {
+    font-size: 0;
+}
+ 
+.cabecalho nav {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    margin-top: 30px;
+}
+
+.cabecalho ul li{
+    display: inline-block;
+    padding: 15px;
+}
+
+.cabecalho ul li a:hover{
+    font-weight: bold;
+}
