@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 200px;
+}
+
+img.scale{
+    transform: scale(5,0.1);
+}
+
+img.rotate{
+    transform: rotate(50deg);
+}
+
+img.translate{
+    transform: translate(500px, 50px);
+}
