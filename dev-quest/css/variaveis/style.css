@@ -1,0 +1,25 @@
+:root{
+    --cor-padrao: blue;
+    --tamanho-de-font-padrao:30px;
+}
+
+h2{
+    color: var(--cor-padrao);
+    font-size: var(--tamanho-de-font-padrao);
+}
+
+h3{
+    color: var(--cor-padrao);
+    font-size: var(--tamanho-de-font-padrao);
+}
+
+p{
+    color: var(--cor-padrao);
+    font-size: var(--tamanho-de-font-padrao);
+}
+
+span{
+    --cor-padrao:red;
+    color: var(--cor-padrao);
+    font-size: var(--tamanho-de-font-padrao);
+}
