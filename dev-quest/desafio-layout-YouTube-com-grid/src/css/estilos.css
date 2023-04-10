@@ -9,6 +9,7 @@ html{
     max-width: 900px;
     display: grid;
     grid-template-areas: "video-destaque propaganda"
+                         "video-destaque video-sugeridos"
                          "video-destaque video-sugeridos";
     grid-template-columns: 1fr 270px;
     grid-template-rows: 56px 1fr;
