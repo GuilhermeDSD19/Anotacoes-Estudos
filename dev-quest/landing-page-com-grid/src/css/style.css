@@ -6,7 +6,7 @@ body {
     display: grid;
     grid-template-areas:
         "header header header header"
-        "hero . hero hero"
+        "hero hero hero hero"
         "about about about about"
         "services services services services"
         "projects projects projects projects"
@@ -21,6 +21,25 @@ body {
 
 .header {
     grid-area: header;
+    background-color: #fff;
+}
+
+.header .header-container{
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+}
+
+.header h1{
+    font-size: 3rem;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.header a:hover h1{
+    color: coral;
 }
 
 /* HERO */
