@@ -2,6 +2,10 @@ html {
     font-size: 62.5%;
 }
 
+html:not(.header) {
+    background-color: #000;
+}
+
 body {
     display: grid;
     grid-template-areas:
@@ -24,7 +28,7 @@ body {
     background-color: #fff;
 }
 
-.header .header-container{
+.header .header-container {
     display: flex;
     padding: 20px 40px;
     justify-content: space-between;
@@ -32,13 +36,13 @@ body {
     min-height: 75px;
 }
 
-.header h1{
+.header h1 {
     font-size: 3rem;
     font-weight: 700;
     transition: 0.3s;
 }
 
-.header a:hover h1{
+.header a:hover h1 {
     color: coral;
 }
 
