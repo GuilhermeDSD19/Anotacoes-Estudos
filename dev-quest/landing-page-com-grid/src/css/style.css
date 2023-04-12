@@ -3,7 +3,7 @@ html {
 }
 
 html:not(.header) {
-    background-color: #000;
+    background-color: black;
 }
 
 body {
@@ -95,27 +95,74 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ABOUT */
 
 .about {
     grid-area: about;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+    max-width: var(--max-width-size);
+    margin: 0 auto;
+}
+
+.about .item{
+    padding: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.about .item h3{
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.about .item p{
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin: 30px 0;
+}
+
+.about .image {
+    height: 100%;
+    width: 100%;
+}
+
+.about .item .btn-know-more{
+    font-size: 1.6rem;
+    align-self: flex-start;
+}
+
+.about .item .btn-know-more:hover{
+    font-weight: 700;
+}
+
+.about .image.right {
+    background: url("../images/bridge.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.about .image.left {
+    background: url("../images/sky.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 425px){
+    .about .item{
+        text-align: center;
+    }
+
+    .about{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .about .item .btn-know-more{
+        align-self: center;
+    }
+
 }
 
 /* SERVICES */
