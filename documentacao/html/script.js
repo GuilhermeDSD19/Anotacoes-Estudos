@@ -41,5 +41,5 @@ form.addEventListener("submit", (event) => {
         email.className = "valid";
         error.textContent = "";
         error.className = "error";
-    }
-});
+    } 
+}) 
