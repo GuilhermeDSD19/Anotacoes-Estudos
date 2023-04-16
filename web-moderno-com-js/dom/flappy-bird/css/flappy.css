@@ -61,3 +61,21 @@
     font-size: 70px;
     z-index: 100;
 }
+
+.info-container button{
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 32px;
+    border-radius: 30px;
+}
+
+.info-container .high-score{
+    width: 240px;
+}
+
+.info-container .reset:hover{
+    color: white;
+    background-color: #0D262D;
+    box-shadow: none;
+    cursor: pointer;
+}
