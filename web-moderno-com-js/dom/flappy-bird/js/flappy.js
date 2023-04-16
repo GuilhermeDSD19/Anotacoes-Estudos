@@ -40,7 +40,6 @@ function ParDeBarreiras(altura, abertura, x) {
 }
 
 function verificarNovoRecorde(pontos) {
-    let recorde = 0
     if (pontos > recorde) {
         recorde = pontos
         let highScore = document.querySelector('.high-score')
@@ -156,9 +155,38 @@ function FlappyBird() {
             if (colidiu(passaro, barreiras)) {
                 clearInterval(temporizador)
                 verificarNovoRecorde(pontos)
+                const reiniciar = document.querySelector('.reset')
+                reiniciar.onclick = this.reiniciarJogo
+            }
+        }, 20)
+    }
+
+    this.reiniciarJogo = () => {
+        areaDoJogo.innerHTML = ''
+        let pontos = 0
+
+        const progresso = new Progresso()
+        const barreiras = new Barreiras(altura, largura, 200, 400,
+            () => progresso.atualizarPontos(++pontos))
+        const passaro = new Passaro(altura)
+
+        areaDoJogo.appendChild(progresso.elemento)
+        areaDoJogo.appendChild(passaro.elemento)
+        barreiras.pares.forEach(par => areaDoJogo.appendChild(par.elemento))
+
+        const temporizador = setInterval(() => {
+            barreiras.animar()
+            passaro.animar()
+
+            if (colidiu(passaro, barreiras)) {
+                clearInterval(temporizador)
+                verificarNovoRecorde(pontos)
+                const reiniciar = document.querySelector('.reset')
+                reiniciar.onclick = this.reiniciarJogo
             }
         }, 20)
     }
 }
 
+let recorde = 0
 new FlappyBird().start()
