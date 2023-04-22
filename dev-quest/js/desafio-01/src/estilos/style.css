@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    background: url(../imagens/flores-rosas.jpg) no-repeat center center/cover;
+}
+
+.container {
+    background-color: white;
+    width: 620px;
+    height: 700px;
+    padding-left: 60px;
+    margin-top: 186px;
+    margin-left: 180px;
+}
+
+.container h1 {
+    font-weight: 400;
+    font-size: 5rem;
+    padding: 65px 0px 80px 0px;
+}
+
+.container p {
+    font-weight: 300;
+    font-size: 2.5rem;
+    max-width: 500px;
+    padding-bottom: 80px;
+}
+
+.container a {
+    font-weight: 700;
+    font-size: 3rem;
+    text-decoration: none;
+    color: #C50000;
+    padding-bottom: 65px;
+}
+
+.setas{
+    width: 49px;
+    height: 78px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0px 70px;
+}
+
+.setas:hover{
+    cursor: pointer;
+}
+
+.esquerda{
+    transform: rotateY(180deg) translateY(-50%);
+    opacity: 50%;
+}
+
+.direita{
+    right: 0px;
+}
