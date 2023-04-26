@@ -15,6 +15,8 @@
 
 _Italico_
 
+~~taxado~~
+
 ***
 
 1. Item 1

@@ -1,0 +1,92 @@
+body {
+    background-image: url(../image/bg-repeat.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    font-size: 1.5rem;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto {
+    color: white;
+    margin: 0px 72px 0px 50px;
+    width: 300px;
+}
+
+.texto .titulo {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 11px;
+}
+
+.texto p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.formulario {
+    background-color: #FFF;
+    height: 378px;
+    width: 340px;
+    padding: 20px 20px 20px 20px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+.formulario input {
+    margin-bottom: 15px;
+    padding: 8px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.formulario textarea {
+    margin-bottom: 15px;
+    padding: 8px;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+}
+
+.formulario>p {
+    margin-bottom: 11px;
+}
+
+.formulario .botao {
+    font-weight: 700;
+    color: white;
+    background-color: #3CCC87;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+    color: #A8A8A8;
+    font-weight: 700;
+    font-family: 1.5rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.invalido {
+    border: 2px solid #F52E2E;
+}
+
+.valido {
+    border: 2px solid #00C22B;
+}
+
+.campo-obrigatorio {
+    margin-top: -15px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #F52E2E;
+    display: none;
+}

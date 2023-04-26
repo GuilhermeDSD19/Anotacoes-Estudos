@@ -1,0 +1,39 @@
+@media(max-width: 1350px) {
+    .slider .seta {
+        position: relative;
+        width: 30px;
+    }
+}
+
+@media(max-width: 1100px) {
+    .slider .seta.avancar {
+        left: 85%;
+    }
+
+    .container .slider .texto {
+        max-width: 350px;
+        padding: 35px 20px;
+    }
+
+    .container .slide .texto .titulo {
+        font-size: 3rem;
+        margin: 0 0 30px 0;
+    }
+
+    .container .slide .texto .info {
+        font-size: 1.6rem;
+        line-height: 22px;
+        font-weight: 300;
+        margin: 0 0 20px 0;
+    }
+
+    .container .slide .texto .link {
+        font-size: 1.6rem;
+    }
+}
+
+@media(max-width: 650px) {
+    .container .slider .texto {
+        margin: 0 55px 0 65px;
+    }
+}
