@@ -56,3 +56,25 @@ form button {
 form button:hover {
   background: var(--primary-color-darker);
 }
+
+.tabela{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.tabela .imc{
+  margin-right: 150px;
+}
+
+ul{
+  padding-left: 0;
+}
+
+ul li{
+  list-style-type: none;
+}
+
+.retorno{
+  padding: 5px;
+}
