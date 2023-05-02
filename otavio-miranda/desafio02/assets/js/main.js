@@ -7,4 +7,3 @@ paragrafos.forEach(e => {
     e.style.backgroundColor=`${backgroundColorBody}`
     e.style.color="#fff"
 })
-
