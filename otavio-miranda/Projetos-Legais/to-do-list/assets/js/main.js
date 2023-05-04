@@ -7,8 +7,9 @@ btnTarefa.addEventListener("click", _ => {
     criarEAdicionarTarefa(inputTarefa.value);
 });
 
-inputTarefa.addEventListener("keypress", (e) => {
-    if (e.keyCode === 13) {
+inputTarefa.addEventListener("keydown", (e) => {
+    console.log(e.key)
+    if (e.key === "Enter") {
         if (!(inputTarefa.value)) return
         criarEAdicionarTarefa(inputTarefa.value)
     }
