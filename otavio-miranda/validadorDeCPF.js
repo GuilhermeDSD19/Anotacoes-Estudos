@@ -1,4 +1,4 @@
-function validaCPF(cpfEnviado) {
+function ValidaCPF(cpfEnviado) {
     Object.defineProperty(this, 'cpfLimpo', {
         enumerable: true,
         get: function () {
@@ -7,7 +7,7 @@ function validaCPF(cpfEnviado) {
     })
 }
 
-validaCPF.prototype.valida = function () {
+ValidaCPF.prototype.valida = function () {
     if (typeof this.cpfLimpo === 'undefined') return false
     if (this.cpfLimpo.length !== 11) return false
     if (this.isSequencia()) return false
@@ -20,7 +20,7 @@ validaCPF.prototype.valida = function () {
     return novoCpf === this.cpfLimpo
 }
 
-validaCPF.prototype.criaDigito = function (cpfParcial) {
+ValidaCPF.prototype.criaDigito = function (cpfParcial) {
     const cpfArray = Array.from(cpfParcial)
 
     let regressivo = cpfArray.length + 1
@@ -34,10 +34,10 @@ validaCPF.prototype.criaDigito = function (cpfParcial) {
     return digito > 9 ? '0' : String(digito)
 }
 
-validaCPF.prototype.isSequencia = function () {
+ValidaCPF.prototype.isSequencia = function () {
     const sequencia = this.cpfLimpo[0].repeat(this.cpfLimpo.length)
     return sequencia === this.cpfLimpo
 }
 
-const cpf = new validaCPF('070.987.720-03')
-console.log(cpf.valida())
+const cpf = new ValidaCPF('070.987.720-03')
+console.log(cpf.valida() ? `O CPF é valido.` : `Não é um CPF é valido.`)
