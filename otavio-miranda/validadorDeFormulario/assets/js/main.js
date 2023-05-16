@@ -96,8 +96,6 @@ class Validaformulario {
         div.classList.add('error-text')
         campo.insertAdjacentElement('afterend', div)
     }
-
-
 }
 
 const valida = new Validaformulario()
