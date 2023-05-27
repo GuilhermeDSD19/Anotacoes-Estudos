@@ -22,8 +22,15 @@ const upload = multer({ storage }).single('arquivo')
 app.post("/upload", (req, res) => {
     upload(req, res, err => {
         if (err) return res.end("Ocoreu um erro")
-        
+
         res.end('Concluido com sucesso.')
+    })
+})
+
+app.post('/formulario', (req, res) => {
+    res.send({
+        ...req.body,
+        id: 1
     })
 })
 
