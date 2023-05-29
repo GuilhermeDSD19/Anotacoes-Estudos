@@ -37,7 +37,7 @@ app.post('/formulario', (req, res) => {
 app.get('/parOuImpar', (req, res) => {
     const par = parseInt(req.query.numero) % 2 === 0
     res.send({
-        resulado: par ? 'par' : "impart"
+        resultado: par ? 'par' : "impar"
     })
 })
 
