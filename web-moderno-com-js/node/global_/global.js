@@ -1,0 +1,1 @@
+globalThis.varGlobal = 'Esta é uma variável global';
