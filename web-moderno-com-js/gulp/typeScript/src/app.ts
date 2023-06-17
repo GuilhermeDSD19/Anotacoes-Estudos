@@ -8,3 +8,9 @@ const c = new Carro
 c.nome = 'Civic'
 c.preco = 89499.00
 exibir(c)
+
+function soma(a: any, b: any){
+    return a + b
+}
+
+console.log(soma(5, 18))
