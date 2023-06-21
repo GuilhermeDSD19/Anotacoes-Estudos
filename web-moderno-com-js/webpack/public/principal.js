@@ -9,6 +9,28 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/assets/css/estilo.css":
+/*!***********************************!*\
+  !*** ./src/assets/css/estilo.css ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://capitulo-webpack/./src/assets/css/estilo.css?");
+
+/***/ }),
+
+/***/ "./src/assets/css/teste.css":
+/*!**********************************!*\
+  !*** ./src/assets/css/teste.css ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://capitulo-webpack/./src/assets/css/teste.css?");
+
+/***/ }),
+
 /***/ "./src/modulos/moduloA.js":
 /*!********************************!*\
   !*** ./src/modulos/moduloA.js ***!
@@ -47,7 +69,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pessoa__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pessoa */ \"./src/pessoa.js\");\n\r\n// import './modulos/moduloA'\r\n\r\nconst atendente = new _pessoa__WEBPACK_IMPORTED_MODULE_0__[\"default\"]()\r\nconsole.log(atendente.cumprimentar())\n\n//# sourceURL=webpack://capitulo-webpack/./src/principal.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pessoa__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pessoa */ \"./src/pessoa.js\");\n/* harmony import */ var _assets_css_estilo_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/css/estilo.css */ \"./src/assets/css/estilo.css\");\n/* harmony import */ var _assets_css_teste_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/css/teste.css */ \"./src/assets/css/teste.css\");\n\r\n\r\n\r\n\r\nconst atendente = new _pessoa__WEBPACK_IMPORTED_MODULE_0__[\"default\"]()\r\nconsole.log(atendente.cumprimentar())\n\n//# sourceURL=webpack://capitulo-webpack/./src/principal.js?");
 
 /***/ })
 

@@ -1,0 +1,12 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(75deg, blue, red);
+    min-height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

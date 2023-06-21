@@ -1,0 +1,24 @@
+/*!*****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/assets/css/estilo.css ***!
+  \*****************************************************************************/
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(75deg, blue, red);
+    min-height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*!****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/assets/css/teste.css ***!
+  \****************************************************************************/
+h1 {
+    color: white;
+    font-weight: bolder;
+    font-family: Helvetica, sans-serif;
+    font-size: 80px;
+}
