@@ -1,11 +1,14 @@
 html {
     margin: 0;
     padding: 0;
+    background: lightcoral;
 }
 
 body {
-    background: linear-gradient(75deg, blue, red);
-    min-height: 98vh;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
