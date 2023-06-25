@@ -7,6 +7,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
     mode: modoDev ? 'development' : 'production',
+    devtool: modoDev ? "source-map" : 'hidden-source-map',
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'build'),
