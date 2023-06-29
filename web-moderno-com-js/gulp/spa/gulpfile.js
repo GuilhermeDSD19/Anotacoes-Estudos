@@ -23,10 +23,10 @@ function monitorarArquivos() {
     watch('src/assets/imgs/**/*.*', appIMG);
 }
 
-gulp.task("default", done => {
+gulp.task("default", _ => {
     if (util.env.production) {
-        return gulp.series(gulp.parallel(depsCSS, depsFonts), gulp.parallel(appHTML, appCSS, appJS, appIMG))(done);
+        return gulp.series(gulp.parallel(depsCSS, depsFonts), gulp.parallel(appHTML, appCSS, appJS, appIMG))();
     } else {
-        return gulp.series(gulp.parallel(depsCSS, depsFonts), gulp.parallel(appHTML, appCSS, appJS, appIMG), iniciarServidor, monitorarArquivos)(done);
+        return gulp.series(gulp.parallel(depsCSS, depsFonts), gulp.parallel(appHTML, appCSS, appJS, appIMG), iniciarServidor, monitorarArquivos)();
     }
 });

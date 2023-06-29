@@ -1,1 +1,36 @@
-html{background:gray;margin:0;padding:0}body{align-items:center;background-image:url(images/logo.png);background-position:top;background-repeat:no-repeat;display:flex;flex-direction:column;justify-content:center;min-height:100vh}h1{font-family:Helvetica,sans-serif;font-size:80px}.botao,h1{color:#fff;font-weight:bolder}.botao{background-color:#10d02a;font-size:4em}
+/*!********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/css/estilo.css ***!
+  \********************************************************************************************************************/
+html {
+  margin: 0;
+  padding: 0;
+  background: lightcoral; }
+
+body {
+  background-image: url(images/logo.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+/*!*******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/css/teste.css ***!
+  \*******************************************************************************************************************/
+h1 {
+  color: white;
+  font-weight: bolder;
+  font-family: Helvetica, sans-serif;
+  font-size: 80px; }
+
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/assets/scss/index.scss ***!
+  \*********************************************************************************************************************/
+.botao {
+  background-color: #10d02a;
+  color: #fff;
+  font-size: 4em;
+  font-weight: bolder; }
+
