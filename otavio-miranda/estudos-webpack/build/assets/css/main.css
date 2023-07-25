@@ -1,2 +1,80 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap);:root{--primary-color:#115666;--primary-color-darker:#093038}*{box-sizing:border-box;outline:0}body{background:var(--primary-color);font-family:Open sans,sans-serif;font-size:1.3em;line-height:1.5em;margin:0;padding:0}.container{background:#fff;border-radius:10px;margin:50px auto;max-width:640px;padding:20px}form button,form input,form label{display:block;margin-bottom:10px;width:100%}form input{font-size:24px;height:50px;padding:0 20px}form input:focus{outline:1px solid var(--primary-color)}form button{background:var(--primary-color);border:none;color:#fff;cursor:pointer;font-size:18px;font-weight:700;height:50px;margin-top:30px}form button:hover{background:var(--primary-color-darker)}.container h1,.cpf-gerado{margin-bottom:40px;text-align:center}.cpf-gerado{color:var(--primary-color);font-size:2em;font-weight:700;letter-spacing:5px}
+/*!****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/assets/css/style.css ***!
+  \****************************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap);
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/assets/css/style.css (1) ***!
+  \********************************************************************************/
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cpf-gerado {
+  font-size: 2em;
+  color: var(--primary-color);
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+  letter-spacing: 5px;
+}
+
 /*# sourceMappingURL=main.css.map*/

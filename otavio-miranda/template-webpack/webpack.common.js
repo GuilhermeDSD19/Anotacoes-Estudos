@@ -22,14 +22,14 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
-                type: "asset/resource"
+                type: 'asset/resource'
             },
         ],
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
-            filename: './index.html',
+            filename: 'index.html',
         }),
     ],
-}
+};
