@@ -1,0 +1,1 @@
+{"version":3,"file":"assets/js/bundle.js","mappings":"mBACAA,QAAQC,IAAI,Q","sources":["webpack://aula01/./frontend/main.js"],"sourcesContent":["// JS\nconsole.log(\"TESTE\")\n\n// CSS\nimport './assets/css/style.css';"],"names":["console","log"],"sourceRoot":""}
