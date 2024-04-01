@@ -1,18 +1,37 @@
-<!-- Título (jumbotron) -->
-<!-- Breadcrumb -->
+<div class="jumbotron p-4 my-1">
+    <h1 class="display-4">Formulário</h1>
+    <p class="lead m-1">Exemplo de alguns componentes de formulário.</p>
+</div>
+
+<nav class="mb-5">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="#/paginas/bemVindo.html">Home</a>
+        </li>
+
+        <li class="breadcrumb-item active">Formulário</li>
+    </ol>
+</nav>
 
 <div class="exercicio">
-    <h1>1. Tipografia -
+    <h1>
+        1. Tipografia -
         <small>
             <a href="https://getbootstrap.com/docs/4.0/content/typography/" target="_black">Documentação Oficial</a>
         </small>
     </h1>
-    <hr>
+    <hr />
 
     <ul>
-        <li><strong>Reboot</strong> - Torna consistente o estilo entre diferentes browser!</li>
+        <li>
+            <strong>Reboot</strong> - Torna consistente o estilo entre diferentes
+            browser!
+        </li>
         <li><strong>Rems</strong> - Baseado no raiz</li>
-        <li>Evita <strong>margin-top</strong> - Provavelmente será necessário adicionar algum espaço</li>
+        <li>
+            Evita <strong>margin-top</strong> - Provavelmente será necessário
+            adicionar algum espaço
+        </li>
         <li><strong>box-sizing</strong> border-box</li>
         <li>Fontes nativas</li>
     </ul>
@@ -25,42 +44,61 @@
     <hr>
 
     <!-- Espaços -->
+    <div class="mb-5">1</div>
+    <div class="m-4 py-4">2</div>
+    <div class="pt-5">3</div>
 
-    <h1 class="mt-5">3. Cores -
+    <h1 class="mt-5">
+        3. Cores -
         <small>
             <a href="https://getbootstrap.com/docs/4.0/utilities/colors/" target="_black">Documentação Oficial</a>
         </small>
     </h1>
-    <hr>
+    <hr />
 
-    <!-- Cores -->
+    <div class="my-1 p-3 bg-primary text-light">1</div>
+    <div class="my-1 p-3 bg-danger text-white">2</div>
+    <div class="my-1 p-3 bg-warning text-success">3</div>
 
-    <h1 class="mt-5">4. Flex -
+    <h1 class="mt-5">
+        4. Flex -
         <small>
             <a href="https://getbootstrap.com/docs/4.0/utilities/flex/" target="_black">Documentação Oficial</a>
         </small>
     </h1>
-    <hr>
+    <hr />
 
-    <!-- Flex -->
+    <div class="d-sm-flex flex-column-reverse p-2">
+        <div class="align-self-end">1</div>
+        <div class="align-self-center">2</div>
+        <div class="align-self-start">3</div>
+    </div>
 
-    <h1 class="mt-5">5. Imagens -
+    <h1 class="mt-5">
+        5. Imagens -
         <small>
             <a href="https://getbootstrap.com/docs/4.0/content/images/" target="_black">Documentação Oficial</a>
         </small>
     </h1>
-    <hr>
+    <hr />
 
-    <!-- Imagens -->
+    <div class="p-2">
+        <img src="/imgs/img1.png" alt="imagem 1" class="mx-auto d-block img-fluid" width="400">
+        <img src="/imgs/img1.png" alt="imagem 2" class="img-thumbnail" width="400">
+        <img src="/imgs/img1.png" alt="imagem 3" class="img-fluid" width="400">
+    </div>
 
-    <h1 class="mt-5">6. Float -
+    <h1 class="mt-5">
+        6. Float -
         <small>
             <a href="https://getbootstrap.com/docs/4.0/utilities/float/" target="_black">Documentação Oficial</a>
         </small>
     </h1>
-    <hr>
+    <hr />
 
-    <!-- Float -->
+    <div class="my-1 p-3 float-left">1</div>
+    <div class="my-1 p-3 float-right">2</div>
+    <div class="my-1 p-3 float-lg-right float-xl-left">2</div>
 </div>
 
 <style>
