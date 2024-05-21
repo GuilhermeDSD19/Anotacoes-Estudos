@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge AluraGeek</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/reset.css" media="screen" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <div class="head-container">
+        <img class="logo-img" src="/assets/icon/Corazon.png" alt="Logo Corazon">
+        <svg width="213" height="21" viewBox="0 0 213 21" fill="none">
+            <path
+                d="M0 21V6H3V3H6V0H15V3H18V6H21V21H15V15H6V21H0ZM6 12H15V6H12V3H9V6H6V12ZM27
+                21V18H33V3H30V0H39V18H45V21H27ZM51 21V18H48V6H54V18H63V6H69V21H51ZM81 9H84V12H81V21H75V6H81V9ZM93
+                6V9H84V6H93ZM99 21V18H96V15H99V12H111V9H99V6H114V9H117V21H99ZM102 18H111V15H102V18Z"
+                fill="white" />
+            <path
+                d="M126 21V18H123V15H120V6H123V3H126V0H141V3H129V6H126V15H129V18H135V12H132V9H141V21H126ZM147
+                21V18H144V9H147V6H162V9H165V15H150V18H162V21H147ZM150 12H159V9H150V12ZM171
+                21V18H168V9H171V6H186V9H189V15H174V18H186V21H171ZM174 12H183V9H174V12ZM192
+                21V0H198V12H204V9H207V6H213V9H210V12H207V15H210V18H213V21H207V18H204V15H198V21H192Z"
+                fill="#E95D44" />
+        </svg>
+    </div>
+    <script defer src="/assets/js/scrips.js" type="module"></script>
+    <script defer src="/assets/js/createProduct.js" type="module"></script>
+    <script defer src="/assets/js/conect.js" type="module"></script>
+</head>
+
+<body>
+    <main class="main">
+        <section>
+            <div class="main-product">
+                <h1>MEUS PRODUTOS:</h1>
+                <div class="main-product-list" card-list>
+                    <div id="loading-spinner" class="loading-spinner"></div>
+                </div>
+            </div>
+            <div class="main-form">
+                <h1>ADICIONAR PRODUTO:</h1>
+                <form class="form-container" data-formulario>
+                    <input type="text" id="product-name" placeholder="nombre..." data-nombre>
+                    <input type="number" id="product-price" placeholder="precio..." data-precio>
+                    <input id="product-image" placeholder="imagen..." data-imagen>
+                    <div class="container-button">
+                        <button type="button" id="submit-btn">Guardar</button>
+                        <button type="button" id="clear-btn">Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+<footer>
+    <div class="footer-logo">
+        <img class="footer-logo-img" src="/assets/icon/Corazon.png" alt="Logo Corazon">
+        <div class="footer-logo-text">AluraGeek</div>
+    </div>
+    <p>DESENVOLVIDO POR GUILHERME DUARTE</p>
+    <p>&copy; Alura Latam - 2024</p>
+</footer>
+</html>
