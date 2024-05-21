@@ -7,7 +7,7 @@
   <img src="https://res.cloudinary.com/ddi5agea1/image/upload/v1611672227/Blog%20Assets/web1_cygzgd.gif" width="500" />
 </div>
 
-[Clique aqui para ver o resultado final](https://github.com/GuilhermeDSD19/anotacoes-dos-estudos/tree/main/ONE-Next-Education/portifolioAlura/index.html)
+[Clique aqui para ver o resultado final](https://guilhermedsd19.github.io/anotacoes-dos-estudos/ONE-Next-Education/portifolioAlura/index.html)
 
 _Projeto desenvolvido para o Challenge do Bootcamp Alura e Oracle._
 
