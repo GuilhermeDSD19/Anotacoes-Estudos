@@ -1,0 +1,101 @@
+{
+  "videos": [
+    {
+      "id": "1",
+      "titulo": "Box Model e Sizing no CSS | #AluraMais",
+      "capa": "https://img.youtube.com/vi/qcNUxyOWXIw/maxresdefault.jpg",
+      "link": "https://www.youtube.com/embed/qcNUxyOWXIw?si=lEvAU6_taV1Qyc3N",
+      "tecnologia": "FRONT END",
+      "descricao": "Quer aprender a utilizar o box model e box sizing nos seus projetos feitos em HTML? A Vanessa Tonini, Instrutora aqui na Alura, explica a você quais são as propriedades visuais destes elementos e como é possível aplicá-los na sua página web."
+    },
+    {
+      "id": "2",
+      "titulo": "Como deixar o Layout Responsivo no seu site | #AluraMais",
+      "capa": "https://img.youtube.com/vi/kyFiT4ofMwk/maxresdefault.jpg",
+      "link": "https://www.youtube.com/embed/kyFiT4ofMwk?si=1ulvotFw06qQn7PU",
+      "tecnologia": "FRONT END",
+      "descricao": "Aprenda responsividade na prática com este tutorial sobre como transformar seu site num layout responsivo através do uso de ferramentas de desenvolvedor do seu navegador, o visual studio code e códigos CSS: media screen, container, propriedades CSS e mais"
+    },
+    {
+      "id": "3",
+      "titulo": "Aprenda a transformar design em código com o Figma | #AluraMais",
+      "capa": "https://img.youtube.com/vi/sup2hlWm5yE/maxresdefault.jpg",
+      "link": "https://www.youtube.com/embed/sup2hlWm5yE?si=rQVFV-GhsuqLkMzj",
+      "tecnologia": "FRONT END",
+      "descricao": "A Rafaella Ballerini, instrutora de Front-End na Alura, vem trazer várias dicas pra você transformar o design em código. Aprenda como exportar imagens, ícones e inspecionar os elementos direto do Figma."
+    },
+    {
+      "id": "4",
+      "titulo": "Evolução do C++ | #Alura Mais",
+      "capa": "https://img.youtube.com/vi/_n5hLYGjdfk/maxresdefault.jpg",
+      "link": "https://www.youtube.com/embed/_n5hLYGjdfk?si=DtYP7CIw6rFYm27G",
+      "tecnologia": "BACK END",
+      "descricao": "O que mudou durante a evolução da linguagem C e quais são, de fato, as novidades do C++ moderno? Nosso instrutor, Vinicius Dias, explica nesse vídeo esse processo de evolução e que novidades surgiram. Confere aí 😉"
+    },
+    {
+      "id": "5",
+      "titulo": "Classe Object | #AluraMais",
+      "capa": "https://img.youtube.com/vi/QVsHcjBwlMU/maxresdefault.jpg",
+      "link": "https://www.youtube.com/embed/QVsHcjBwlMU?si=8RGYSaQOZJoADomY",
+      "tecnologia": "BACK END",
+      "descricao": "O André Bessa, Instrutor na Escola de Programação aqui na Alura, explica a você tudo sobre Classe Object. Vamos nessa?"
+    },
+    {
+      "id": "6",
+      "titulo": "O que é Node.js? | #AluraMais",
+      "capa": "https://img.youtube.com/vi/8VSTrZY8vwI/maxresdefault.jpg",
+      "link": "https://www.youtube.com/embed/8VSTrZY8vwI?si=10OtoyWcp_yaDEtc",
+      "tecnologia": "BACK END",
+      "descricao": "A Juliana Amoasei, Instrutora na Escola de Programação aqui na Alura, apresenta a vocês o Node.js, o ambiente de execução do Javascript."
+    },
+    {
+      "id": "7",
+      "titulo": "ConstraintLayout no Android | #AluraMais",
+      "capa": "https://img.youtube.com/vi/p4fiAiiPi3E/maxresdefault.jpg",
+      "link": "https://www.youtube.com/embed/p4fiAiiPi3E?si=fp6lsy57TPVrZPSs",
+      "tecnologia": "MOBILE",
+      "descricao": "Neste #AluraMais, a Jeniffer Bittencourt, Instrutora na Escola Mobile da Alura, vai mostrar algumas formas implementar e otimizar a criação de layouts maiores e mais complexos utilizando o Constraint Layout."
+    },
+    {
+      "id": "8",
+      "titulo": "Ícones e animações em apps com React Native | #AluraMais",
+      "capa": "https://img.youtube.com/vi/30EDNceHcV8/maxresdefault.jpg",
+      "link": "https://www.youtube.com/embed/30EDNceHcV8?si=7Miojfa8jF0jG3zj",
+      "tecnologia": "MOBILE",
+      "descricao": "O André Cunha, Instrutor na Escola de Mobile aqui na Alura, vai ensinar você a  como utilizar ícones e animações em aplicativos com o React Native. Vamos nessa? 📲"
+    },
+    {
+      "id": "9",
+      "titulo": "O que é Firebase? | #AluraMais",
+      "capa": "https://img.youtube.com/vi/btsPmP5NY5k/maxresdefault.jpg",
+      "link": "https://youtu.be/embed/btsPmP5NY5k?si=H7iTxODKSpp_XfOv",
+      "tecnologia": "MOBILE",
+      "descricao": "Neste vídeo, o Leonardo Marinho, Instrutor aqui na Alura, mostra vários recursos disponíveis no Firebase, plataforma da Google para criação de aplicativos e que pode ajudar muito você a criar projetos com facilidade e rapidez."
+    },
+    {
+      "id": "10",
+      "titulo": "Diferenças entre React e React Native | #AluraMais",
+      "capa": "https://img.youtube.com/vi/2-OAUXA4IcE/maxresdefault.jpg",
+      "link": "https://www.youtube.com/embed/2-OAUXA4IcE?si=BiZXyNjENJeNwBss",
+      "tecnologia": "MOBILE",
+      "descricao": "Neste vídeo, o Luiz Fernando e a Natália Thiel, Instrutor e Instrutora aqui na Alura, falam um pouco mais sobre as diferencias e similaridades do React JS e o React Native e como é usar ambas as ferramentas em seu projeto mobile."
+    }
+  ],
+  "categorias": [
+    {
+      "id": "1",
+      "tecnologia": "FRONT END",
+      "cor": "#6BD1FF"
+    },
+    {
+      "id": "2",
+      "tecnologia": "BACK END",
+      "cor": "#00C86F"
+    },
+    {
+      "id": "3",
+      "tecnologia": "MOBILE",
+      "cor": "#FFBA05"
+    }
+  ]
+}
