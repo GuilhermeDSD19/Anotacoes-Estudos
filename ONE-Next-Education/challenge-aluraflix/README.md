@@ -3,6 +3,7 @@
 <h2>Sobre</h2>
 <p>Projeto feito durante o programa ONE da Alura.</p>
 <p>Esse desafio foi feito para praticar o React aprendido durante a formação Front-end.</p>
+Acesse o projeto: <a href="https://challenge-aluraflix-nu.vercel.app/">Alura Flix</a>
 
 ## Tecnologias
 <div>
@@ -16,4 +17,6 @@
 
 <h2>Deploy do projeto</h2>
 <img src="public/assets/Captura de tela de 2024-07-09 17-03-00.png">
-<a href="https://challenge-aluraflix-nu.vercel.app/">Alura Flix</a>
+
+
+![Badge-AluraFlix](https://github.com/user-attachments/assets/27ea84d4-217e-46f9-b185-44edc7de8e66)
