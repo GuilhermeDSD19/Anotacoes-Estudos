@@ -14,7 +14,6 @@ server.post("/produtos", (req, res) => {
   res.send(novoProduto);
 });
 
-// Ruta para obtener todos los productos
 server.get("/produtos", (req, res) => {
   const productos = router.db.get("productos").value();
   res.send(productos);
